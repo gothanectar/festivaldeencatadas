@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import CookieBanner from './components/CookieBanner';
 import Header from './components/Header';
 import ScrollingShows from './components/ScrollingShows';
@@ -137,7 +137,7 @@ function App() {
   const filteredPousadas = pousadas.filter(pousada => pousada.category === activePousadaTab);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full box-border overflow-x-hidden">
       <CookieBanner />
       <Header />
 
@@ -206,8 +206,10 @@ function App() {
 
       {/* As próximas seções virão aqui */}
 
+      {/* Texto de teste */}
+
     </div>
   );
 }
 
-export default App;
+export { App };

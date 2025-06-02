@@ -52,7 +52,7 @@ const LodgingSection: React.FC<LodgingSectionProps> = ({
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {filteredPousadas.map((pousada) => (
-            <div key={pousada.id} className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+            <div key={pousada.id} className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
               <h3 className="text-lg sm:text-xl font-bold text-green-forest">{pousada.name}</h3>
               <p className="text-earth-dark">Preço médio: R$ {pousada.price}</p>
               <p className="text-earth-dark mt-1">{pousada.desc}</p>

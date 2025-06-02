@@ -17,7 +17,6 @@ interface ProgramSectionProps {
 }
 
 const ProgramSection: React.FC<ProgramSectionProps> = ({
-  programacao,
   filterProgramacao,
   setFilterProgramacao,
   filteredProgramacao, // Adicionado filteredProgramacao nas props

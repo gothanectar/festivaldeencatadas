@@ -42,7 +42,7 @@ const MediaGallery: React.FC<MediaGalleryProps> = ({ mediaItems }) => {
       <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-center text-orange-600">Galeria da Ilha</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
         {items.map((item) => (
-          <div key={item.id} className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+          <div key={item.id} className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
             {item.type === 'image' ? (
               <img src={item.src} alt={item.alt} className="w-full h-64 object-cover rounded-lg" loading="lazy" />
             ) : (
