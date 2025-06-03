@@ -137,7 +137,7 @@ function App() {
   const filteredPousadas = pousadas.filter(pousada => pousada.category === activePousadaTab);
 
   return (
-    <div className="min-h-screen w-full box-border overflow-x-hidden">
+    <div className="min-h-screen max-w-screen-md mx-auto px-4">
       <CookieBanner />
       <Header />
 
