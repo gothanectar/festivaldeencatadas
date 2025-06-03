@@ -57,21 +57,21 @@ const ProgramSection: React.FC<ProgramSectionProps> = ({
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {filteredProgramacao.map((evento) => (
-            <div key={evento.id} className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+            <div key={evento.id} className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
               <img src={evento.img} alt={evento.title} className="w-full h-40 object-cover rounded-t-lg" loading="lazy" />
               <h3 className="text-lg sm:text-xl font-bold mt-2 text-orange-600">{evento.title}</h3>
-              <p className="text-gray-600">{evento.date}</p>
-              <p className="text-gray-700 mt-1">{evento.desc}</p>
+              <p className="text-gray-600 text-sm sm:text-base">{evento.date}</p>
+              <p className="text-gray-700 mt-1 text-sm sm:text-base">{evento.desc}</p>
               <div className="mt-2 flex space-x-2">
                 <button
-                  className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
+                  className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm"
                   onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank')}
                   aria-label="Compartilhar no Facebook"
                 >
                   FB
                 </button>
                 <button
-                  className="bg-blue-400 text-white px-3 py-1 rounded hover:bg-blue-500"
+                  className="bg-blue-400 text-white px-3 py-1 rounded hover:bg-blue-500 text-sm"
                   onClick={() => window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(evento.title)}`, '_blank')}
                   aria-label="Compartilhar no Twitter"
                 >

@@ -42,38 +42,38 @@ const MediaGallery: React.FC<MediaGalleryProps> = ({ mediaItems }) => {
       <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-center text-orange-600">Galeria da Ilha</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
         {items.map((item) => (
-          <div key={item.id} className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+          <div key={item.id} className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
             {item.type === 'image' ? (
-              <img src={item.src} alt={item.alt} className="w-full h-64 object-cover rounded-lg" loading="lazy" />
+              <img src={item.src} alt={item.alt} className="w-full object-cover rounded-lg" loading="lazy" />
             ) : (
               <iframe
                 src={getEmbedUrl(item.src)}
                 title={item.alt}
-                className="w-full h-64 rounded-lg"
+                className="w-full rounded-lg aspect-video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
                 loading="lazy"
               ></iframe>
             )}
-            <p className="mt-2 text-center text-gray-700">{item.alt}</p>
+            <p className="mt-2 text-center text-gray-700 text-sm sm:text-base">{item.alt}</p>
             <div className="mt-2 flex justify-center space-x-2">
               <button
-                className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
+                className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm"
                 onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(item.src)}`, '_blank')}
                 aria-label="Compartilhar no Facebook"
               >
                 <i className="fab fa-facebook-f"></i>
               </button>
               <button
-                className="bg-blue-400 text-white px-3 py-1 rounded hover:bg-blue-500"
+                className="bg-blue-400 text-white px-3 py-1 rounded hover:bg-blue-500 text-sm"
                 onClick={() => window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(item.src)}&text=${encodeURIComponent(item.alt)}`, '_blank')}
                 aria-label="Compartilhar no Twitter"
               >
                 <i className="fab fa-twitter"></i>
               </button>
               <button
-                className="bg-pink-600 text-white px-3 py-1 rounded hover:bg-pink-700"
+                className="bg-pink-600 text-white px-3 py-1 rounded hover:bg-pink-700 text-sm"
                 onClick={() => window.open('https://instagram.com/encantadasjazz', '_blank')}
                 aria-label="Seguir no Instagram"
               >

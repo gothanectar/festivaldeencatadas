@@ -39,36 +39,36 @@ const TicketsSection: React.FC<TicketsSectionProps> = ({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {activeTicketTab === 'encantadas' && (
             <>
-              <div className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <h3 className="text-lg sm:text-xl font-bold text-green-forest">Show Palco Swamp</h3>
-                <p className="text-earth-dark">Data: 2 de Agosto, 20h</p>
-                <p className="text-earth-dark">Preço: R$ 30,00</p>
+                <p className="text-earth-dark text-sm sm:text-base">Data: 2 de Agosto, 20h</p>
+                <p className="text-earth-dark text-sm sm:text-base">Preço: R$ 30,00</p>
                 <button
-                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto"
+                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
                   onClick={() => addToCart({ name: "Show Palco Swamp", price: 30 })}
                   aria-label="Adicionar Show Palco Swamp ao carrinho"
                 >
                   Adicionar ao Carrinho
                 </button>
               </div>
-              <div className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <h3 className="text-lg sm:text-xl font-bold text-green-forest">Balada Grajagan</h3>
-                <p className="text-earth-dark">Data: 3 de Agosto, 22h</p>
-                <p className="text-earth-dark">Preço: R$ 50,00</p>
+                <p className="text-earth-dark text-sm sm:text-base">Data: 3 de Agosto, 22h</p>
+                <p className="text-earth-dark text-sm sm:text-base">Preço: R$ 50,00</p>
                 <button
-                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto"
+                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
                   onClick={() => addToCart({ name: "Balada Grajagan", price: 50 })}
                   aria-label="Adicionar Balada Grajagan ao carrinho"
                 >
                   Adicionar ao Carrinho
                 </button>
               </div>
-              <div className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <h3 className="text-lg sm:text-xl font-bold text-green-forest">Pacote Fim de Semana</h3>
-                <p className="text-earth-dark">Data: 2-3 de Agosto</p>
-                <p className="text-earth-dark">Preço: R$ 80,00</p>
+                <p className="text-earth-dark text-sm sm:text-base">Data: 2-3 de Agosto</p>
+                <p className="text-earth-dark text-sm sm:text-base">Preço: R$ 80,00</p>
                 <button
-                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto"
+                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
                   onClick={() => addToCart({ name: "Pacote Fim de Semana Encantadas", price: 80 })}
                   aria-label="Adicionar Pacote Fim de Semana Encantadas ao carrinho"
                 >
@@ -79,36 +79,36 @@ const TicketsSection: React.FC<TicketsSectionProps> = ({
           )}
           {activeTicketTab === 'brasilia' && (
             <>
-              <div className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <h3 className="text-lg sm:text-xl font-bold text-green-forest">Show Cavalo Marinho</h3>
-                <p className="text-earth-dark">Data: 9 de Agosto, 21h</p>
-                <p className="text-earth-dark">Preço: R$ 45,00</p>
+                <p className="text-earth-dark text-sm sm:text-base">Data: 9 de Agosto, 21h</p>
+                <p className="text-earth-dark text-sm sm:text-base">Preço: R$ 45,00</p>
                 <button
-                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto"
+                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
                   onClick={() => addToCart({ name: "Show Cavalo Marinho", price: 45 })}
                   aria-label="Adicionar Show Cavalo Marinho ao carrinho"
                 >
                   Adicionar ao Carrinho
                 </button>
               </div>
-              <div className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <h3 className="text-lg sm:text-xl font-bold text-green-forest">Jazz Sunset</h3>
-                <p className="text-earth-dark">Data: 10 de Agosto, 18h</p>
-                <p className="text-earth-dark">Preço: Gratuito</p>
+                <p className="text-earth-dark text-sm sm:text-base">Data: 10 de Agosto, 18h</p>
+                <p className="text-earth-dark text-sm sm:text-base">Preço: Gratuito</p>
                 <button
-                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto"
+                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
                   onClick={() => alert("Evento gratuito! Não precisa de ingresso.")}
                   aria-label="Reservar vaga para Jazz Sunset"
                 >
                   Reservar Vaga
                 </button>
               </div>
-              <div className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <h3 className="text-lg sm:text-xl font-bold text-green-forest">Pacote Fim de Semana</h3>
-                <p className="text-earth-dark">Data: 9-10 de Agosto</p>
-                <p className="text-earth-dark">Preço: R$ 70,00</p>
+                <p className="text-earth-dark text-sm sm:text-base">Data: 9-10 de Agosto</p>
+                <p className="text-earth-dark text-sm sm:text-base">Preço: R$ 70,00</p>
                 <button
-                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto"
+                  className="mt-2 bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
                   onClick={() => addToCart({ name: "Pacote Fim de Semana Nova Brasília", price: 70 })}
                   aria-label="Adicionar Pacote Fim de Semana Nova Brasília ao carrinho"
                 >

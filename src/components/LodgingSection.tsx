@@ -52,11 +52,11 @@ const LodgingSection: React.FC<LodgingSectionProps> = ({
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {filteredPousadas.map((pousada) => (
-            <div key={pousada.id} className="gradient-border p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+            <div key={pousada.id} className="gradient-border p-3 sm:p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
               <h3 className="text-lg sm:text-xl font-bold text-green-forest">{pousada.name}</h3>
-              <p className="text-earth-dark">Preço médio: R$ {pousada.price}</p>
-              <p className="text-earth-dark mt-1">{pousada.desc}</p>
-              <a href={pousada.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">Visitar Site</a>
+              <p className="text-earth-dark text-sm sm:text-base">Preço médio: R$ {pousada.price}</p>
+              <p className="text-earth-dark mt-1 text-sm sm:text-base">{pousada.desc}</p>
+              <a href={pousada.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm sm:text-base">Visitar Site</a>
 
               {/* Formulário de Contato Básico (Adaptado para React) */}
               <form onSubmit={(e) => {
@@ -67,31 +67,31 @@ const LodgingSection: React.FC<LodgingSectionProps> = ({
               }} className="mt-4 space-y-2">
                 <div>
                   <label htmlFor={`name-${pousada.id}`} className="block text-sm font-medium text-earth-dark">Nome:</label>
-                  <input type="text" id={`name-${pousada.id}`} name="name" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest" />
+                  <input type="text" id={`name-${pousada.id}`} name="name" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest text-sm sm:text-base" />
                 </div>
                 <div>
                   <label htmlFor={`email-${pousada.id}`} className="block text-sm font-medium text-earth-dark">Email:</label>
-                  <input type="email" id={`email-${pousada.id}`} name="email" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest" />
+                  <input type="email" id={`email-${pousada.id}`} name="email" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest text-sm sm:text-base" />
                 </div>
                 <div>
                   <label htmlFor={`checkIn-${pousada.id}`} className="block text-sm font-medium text-earth-dark">Check-in:</label>
-                  <input type="date" id={`checkIn-${pousada.id}`} name="checkIn" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest" />
+                  <input type="date" id={`checkIn-${pousada.id}`} name="checkIn" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest text-sm sm:text-base" />
                 </div>
                 <div>
                   <label htmlFor={`checkOut-${pousada.id}`} className="block text-sm font-medium text-earth-dark">Check-out:</label>
-                  <input type="date" id={`checkOut-${pousada.id}`} name="checkOut" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest" />
+                  <input type="date" id={`checkOut-${pousada.id}`} name="checkOut" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest text-sm sm:text-base" />
                 </div>
                 <div>
                   <label htmlFor={`guests-${pousada.id}`} className="block text-sm font-medium text-earth-dark">Hóspedes:</label>
-                  <input type="number" id={`guests-${pousada.id}`} name="guests" min="1" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest" />
+                  <input type="number" id={`guests-${pousada.id}`} name="guests" min="1" required className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest text-sm sm:text-base" />
                 </div>
                  <div>
                   <label htmlFor={`roomType-${pousada.id}`} className="block text-sm font-medium text-earth-dark">Tipo de Quarto:</label>
-                  <input type="text" id={`roomType-${pousada.id}`} name="roomType" className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest" />
+                  <input type="text" id={`roomType-${pousada.id}`} name="roomType" className="mt-1 block w-full border border-earth-light rounded-md shadow-sm p-2 focus:outline-none focus:ring-green-forest focus:border-green-forest text-sm sm:text-base" />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 shadow-md"
+                  className="w-full bg-green-forest text-white px-4 py-2 rounded hover:bg-green-700 transition-all duration-300 shadow-md text-sm sm:text-base"
                 >
                   Pedir Orçamento
                 </button>
